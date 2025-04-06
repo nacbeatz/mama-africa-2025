@@ -31,7 +31,6 @@ const MountainGorilla = () => {
       animate="visible"
       variants={fadeIn}
     >
-
       <motion.div
         className="bg-cover bg-center h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px]"
         style={{ backgroundImage: `url('/img/20.jpg')` }}
@@ -70,11 +69,8 @@ const MountainGorilla = () => {
               The conservation efforts to protect mountain gorillas have been highly successful, making this a once-in-a-lifetime eco-tourism experience.
               Seeing them up close, watching their interactions, and understanding their importance to biodiversity is an unforgettable adventure.
             </p>
-            
           </motion.div>
-          
         </div>
-
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div className="p-8" variants={slideUp}>
@@ -85,8 +81,9 @@ const MountainGorilla = () => {
               A permit is required for trekking, and a limited number of visitors are allowed each day to minimize impact on the gorillas and their environment.
               Booking in advance is essential due to high demand.
             </p>
-           
-            <motion.div className="relative" variants={scaleUp}>
+          </motion.div>
+
+          <motion.div className="relative" variants={scaleUp}>
             <motion.img
               src="/img/gorilla.jpg"
               alt="Mountain Gorilla"
@@ -94,16 +91,18 @@ const MountainGorilla = () => {
               variants={fadeIn}
             />
           </motion.div>
-        
+        </div>
+
+        {/* Move the Book Now button here */}
+        <div className="flex justify-center mt-12">
           <motion.button
-              onClick={handleBookNow}
-              className="mt-4 lg:mt-8 text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              BOOK NOW
-            </motion.button>
-          </motion.div>
+            onClick={handleBookNow}
+            className="text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            BOOK NOW
+          </motion.button>
         </div>
       </div>
     </motion.div>

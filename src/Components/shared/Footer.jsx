@@ -55,9 +55,8 @@ const Footer = () => {
                 className="text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 
       hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:font-normal font-bold 
       py-2 w-2/4 px-4 rounded-md transition duration-300 transform hover:scale-110 
-      hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+      hover:shadow-lg shadow-[0_0_15px_#D6ED07]"
+                
               >
                 REGISTER
               </motion.button>
@@ -121,7 +120,7 @@ const Footer = () => {
       <div className="mt-8 border-t border-white pt-4 text-center font-coolvetica">
         <p className="text-sm">
           Copyrights © 2025 - <span className="text-yellow-300 text-sm">Mama Africa Tours </span>.
-          All Rights Reserved . Designed By <span className="text-yellow-300 text-sm">CROX STUDIOS </span>.
+          All Rights Reserved . Designed By <span className="text-yellow-300 text-sm">CroxStudios </span>.
         </p>
       </div>
     </footer>

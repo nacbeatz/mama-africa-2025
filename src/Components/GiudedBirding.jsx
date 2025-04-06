@@ -69,15 +69,6 @@ const GuidedBirds = () => {
             <p className="text-gray-700 text-lg mb-8">
               Join us for an unforgettable bird-watching experience where you can immerse yourself in nature, learn about avian wildlife, and appreciate the wonders of the natural world. The tour is suitable for all ages and skill levels.
             </p>
-
-            <motion.button
-              onClick={handleBookNow}
-              className="mt-4 lg:mt-8 text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              BOOK NOW
-            </motion.button>
           </motion.div>
 
           <motion.div
@@ -92,6 +83,17 @@ const GuidedBirds = () => {
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
           </motion.div>
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <motion.button
+            onClick={handleBookNow}
+            className="text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            BOOK NOW
+          </motion.button>
         </div>
       </div>
     </div>

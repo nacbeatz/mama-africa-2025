@@ -92,14 +92,6 @@ const NyungweForest = () => {
             >
               Apart from primates, the park is also home to various other species, including forest elephants, leopards, and numerous species of birds. With its breathtaking beauty and rich biodiversity, Nyungwe Forest provides an unforgettable experience for nature lovers and adventure seekers.
             </motion.p>
-            <motion.button
-              onClick={handleBookNow}
-              className="mt-4 lg:mt-8 text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              BOOK NOW
-            </motion.button>
           </div>
 
           <div className="relative">
@@ -112,6 +104,18 @@ const NyungweForest = () => {
               transition={{ duration: 1, delay: 0.5 }}
             />
           </div>
+        </div>
+
+        {/* Move the Book Now button here */}
+        <div className="flex justify-center mt-12">
+          <motion.button
+            onClick={handleBookNow}
+            className="text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            BOOK NOW
+          </motion.button>
         </div>
       </div>
     </div>

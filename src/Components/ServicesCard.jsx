@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 import img1 from "/img/07.jpg";
 import img2 from "/img/GLR_mountain.jpg";
-import img3 from "/img/SILVER_MONKEY.jpg";
-import img4 from "/img/Saddle-billed_stork_couple.jpg";
-import img5 from "/img/wedding.jpg";
-import img6 from "/img/Old_prepararion_food.jpg";
+import img3 from "/img/SILVER_MONKEY.avif";
+import img4 from "/img/Saddle-billed_stork_couple.avif";
+import img5 from "/img/wedding.avif";
+import img6 from "/img/Old_prepararion_food.avif";
 
 const services = [
   {
@@ -99,8 +99,10 @@ const ServicesCard = () => {
                   <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-90 transition-opacity duration-300"></div>
                 </div>
 
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-4 service-content"> {/* Increased p-2 to p-4 */}
-                  <h1 className="service-title">{service.title}</h1>
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-4 service-content"> 
+                  <h1 className="service-title text-lg"> {/* Added text-lg to decrease font size */}
+                    {service.title}
+                  </h1>
                   <motion.p
                     className="text-sm text-left opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 px-2" // Added px-2 for text breathing room
                   >

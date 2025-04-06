@@ -12,7 +12,6 @@ const HistoricalSites = () => {
   return (
     <div className="container mx-auto px-4 py-8 font-coolvetica mt-12">
       
-  
       <motion.div
         className="bg-cover bg-center h-[400px] flex items-center justify-center ml-[-16px] mr-[-16px]"
         style={{ backgroundImage: `url('/img/23.jpg')` }}
@@ -25,7 +24,6 @@ const HistoricalSites = () => {
         </h1>
       </motion.div>
       
-    
       <div className="container mx-auto px-4 py-8 font-coolvetica">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
@@ -60,7 +58,6 @@ const HistoricalSites = () => {
         </div>
       </div>
       
-      
       <div className="container mx-auto px-4 py-8 font-coolvetica">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
@@ -78,7 +75,7 @@ const HistoricalSites = () => {
             <p className="text-gray-700 text-lg mb-8">
               These tours provide a unique opportunity to hear firsthand accounts from historians and elders, making history come alive in an immersive way.
             </p>
-           
+          </motion.div>
           
           <motion.div
             className="relative"
@@ -92,16 +89,18 @@ const HistoricalSites = () => {
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
           </motion.div>
-          <motion.button
-              onClick={handleBookNow}
-              className="mt-4 lg:mt-8 text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              BOOK NOW
-            </motion.button>
-          </motion.div>
         </div>
+      </div>
+      
+      <div className="flex justify-center mt-12">
+        <motion.button
+          onClick={handleBookNow}
+          className="text-green-900 bg-gradient-to-r from-[#D6ED07] to-yellow-300 hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:text-black hover:font-normal font-bold py-2 px-4 lg:px-6 rounded-md transition duration-300 transform hover:scale-110 hover:shadow-lg shadow-[0_0_15px_#D6ED07] animate-pulse"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          BOOK NOW
+        </motion.button>
       </div>
     </div>
   );
