@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 const faqs = [
   { question: "What is included in the tour package?", answer: "Accommodation, meals, and guided tours are included." },
@@ -8,15 +8,15 @@ const faqs = [
 ];
 
 const About = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleBookingClick = () => {
-    navigate("/booking"); 
+    navigate("/booking");
   };
 
   return (
     <div className="min-h-screen w-full bg-slate-200 flex justify-center items-center px-6 py-12 mt-24">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -24,18 +24,21 @@ const About = () => {
       >
         <h1 className="text-xl text-green-600">About Mama Africa Tours</h1>
         <p className="mt-6">
-          Welcome to Mama Africa Tours, your gateway to the captivating beauty of Rwanda. 
+          Welcome to Mama Africa Tours, your gateway to the captivating beauty of Rwanda.
           We provide unforgettable experiences that showcase the unique charm and splendor of this remarkable East African nation.
         </p>
 
-        <img 
-          src="/img/rda01.jpg" 
-          alt="Beautiful landscape of Rwanda" 
+        <img
+          src="/img/rda01.jpg"
+          alt="Beautiful landscape of Rwanda"
           className="w-full h-96 object-cover rounded-sm mt-6 shadow-md"
+          loading="lazy"
+          width="1200"
+          height="600"
         />
 
         <h1 className="text-xl mt-6">What Makes Us Unique:</h1>
-        
+
         <div className="mt-4">
           <h2 className="font-semibold">In-Depth Local Insight:</h2>
           <p>Our team consists of dedicated locals passionate about Rwanda's culture and hidden treasures.</p>
