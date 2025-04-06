@@ -29,7 +29,7 @@ const About = () => {
         </p>
 
         <img
-          src="/img/rda01.jpg"
+          src="/img/rda01.avif"
           alt="Beautiful landscape of Rwanda"
           className="w-full h-96 object-cover rounded-sm mt-6 shadow-md"
           loading="lazy"
