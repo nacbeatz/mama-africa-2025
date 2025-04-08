@@ -11,10 +11,8 @@ const isLargeScreen = () => {
 
 const HeroSection = () => {
   const images = [
-    "/img/05.jpg", "/img/DSC01236.jpeg", "/img/07.jpg", "/img/10.jpg",
-    "/img/DSC01318.jpeg", "/img/26.jpg", "/img/DSC01357.jpeg", "/img/04.jpg",
-    "/img/DSC01244.jpeg", "/img/06.jpg", "/img/img01.jpeg", "/img/08.jpg",
-    "/img/09.jpg"
+    "/img/Old_prepararion_food.avif", "/img/SILVER_MONKEY.avif", "/img/wedding.avif", "/img/Saddle-billed_stork_couple.avif",
+    "/img/03.avif"
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -53,7 +51,7 @@ const HeroSection = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      
+
       <motion.div
         className="absolute inset-0 bg-black bg-opacity-50"
         initial={{ opacity: 0 }}
@@ -61,7 +59,7 @@ const HeroSection = () => {
         transition={{ duration: 1.5 }}
       ></motion.div>
 
-      
+
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white w-full">
         <motion.h1
           className="text-4xl lg:text-8xl font-bold font-coolvetica max-w-[90%] lg:max-w-[70%] mx-auto"
@@ -81,7 +79,7 @@ const HeroSection = () => {
           understand the wild.
         </motion.p>
 
-        
+
         <motion.button
           onClick={handleBookingClick}
           className="lg:mt-24 text-gray-800 bg-gradient-to-r from-[#D6ED07] to-yellow-300 
@@ -95,7 +93,7 @@ const HeroSection = () => {
         </motion.button>
       </div>
 
-     
+
     </motion.div>
   );
 };
