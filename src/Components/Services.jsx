@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import img1 from '/img/07.jpg';
-import img2 from '/img/04.jpg';
-import img3 from '/img/06.jpg';
-import img4 from '/img/08.jpg';
-import img5 from '/img/09.jpg';
-import img6 from '/img/17.jpg';
+import img1 from '/img/GRL_MOUNTAIN2.avif';
+import img2 from '/img/Tradition_d.avif';
+import img3 from '/img/wild-life.avif';
+import img4 from '/img/bird-tour.jpg';
+import img5 from '/img/adventures.jpg';
+import img6 from '/img/community.jpeg';
 
 const servicesData = [
   {

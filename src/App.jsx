@@ -36,31 +36,31 @@ function App() {
       id: 2,
       name: 'Mountain Gorilla Expeditions',
       description: 'Unwind and relax on the sunny beaches with our exclusive packages.',
-      imageUrl: '/img/14.jpg',
+      imageUrl: '/img/GLR_mountain_ol.avif',
     },
     {
       id: 3,
       name: 'Nyungwe Forest Adventures',
       description: 'Explore the rich history and culture of the city with our guided tours.',
-      imageUrl: '/img/05.jpg',
+      imageUrl: '/img/nyungwe-park.jpg',
     },
     {
       id: 4,
       name: 'Guided Birding Tours',
       description: 'Join us for an unforgettable wildlife safari experience in the national parks.',
-      imageUrl: '/img/06.jpg',
+      imageUrl: '/img/STARLING.avif',
     },
     {
       id: 5,
       name: 'Historical Sites Tour',
       description: 'Discover the ancient ruins and historical sites with our expert guides.',
-      imageUrl: '/img/07.jpg',
+      imageUrl: '/img/Tradition_house_2.avif',
     },
     {
       id: 6,
       name: 'Gastronomic Experience',
       description: 'Indulge in a culinary journey exploring local cuisines and delicacies.',
-      imageUrl: '/img/08.jpg',
+      imageUrl: '/img/gastromic.avif',
     },
   ];
 
