@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './Components/shared/Header';
- import NavBar from './Components/shared/NavBar';
+import NavBar from './Components/shared/NavBar';
 import Booking from './Components/Booking';
 import HeroSection from './Components/HeroSection';
 import ServicesCard from './Components/ServicesCard';
@@ -22,7 +22,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
-  
+
   const [selectedTour, setSelectedTour] = useState(null);
 
   const packagesData = [
@@ -30,7 +30,7 @@ function App() {
       id: 1,
       name: 'Akagera National Park Safaris',
       description: 'Experience the thrill of hiking in the beautiful mountains.',
-      imageUrl: '/img/04.jpg',
+      imageUrl: '/img/Akagera_National_Park.jpg',
     },
     {
       id: 2,
@@ -82,17 +82,17 @@ function App() {
               <>
                 <HeroSection />
                 <ServicesCard />
-               <MissionVision /> 
+                <MissionVision />
               </>
             }
           />
           <Route path="/who-we-are" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route 
-            path="/packages" 
-            element={<Packages packagesData={packagesData} onTourSelect={handleTourSelect} />} 
+          <Route
+            path="/packages"
+            element={<Packages packagesData={packagesData} onTourSelect={handleTourSelect} />}
           />
-           <Route path="/packages/akagera-national-park" element={<AkageraPark />} />
+          <Route path="/packages/akagera-national-park" element={<AkageraPark />} />
           <Route path="/packages/mountain-gorilla-expeditions" element={<MountainGorilla />} />
           <Route path="/packages/nyungwe-forest-adventures" element={<NyungweForest />} />
           <Route path="/packages/guided-birding-tours" element={<GiudedBirding />} />
