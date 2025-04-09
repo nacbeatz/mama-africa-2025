@@ -11,13 +11,15 @@ const isLargeScreen = () => {
 
 const HeroSection = () => {
   const images = [
-    "/img/Old_prepararion_food.avif", "/img/SILVER_MONKEY.avif", "/img/wedding.avif", "/img/Saddle-billed_stork_couple.avif",
-    "/img/03.avif"
+    "/img/Old_prepararion_food.avif",
+    "/img/SILVER_MONKEY.avif",
+    "/img/wedding.avif",
+    "/img/Saddle-billed_stork_couple.avif",
+    "/img/03.avif",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoSliding, setIsAutoSliding] = useState(isLargeScreen());
-  const [selectedTour, setSelectedTour] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,7 +42,9 @@ const HeroSection = () => {
   }, []);
 
   const handleBookingClick = () => {
-    navigate("/booking", { state: { selectedTour } });
+    // Clear any previously stored tour selection
+    localStorage.removeItem('selectedTour');
+    navigate("/booking");
   };
 
   return (
@@ -51,14 +55,12 @@ const HeroSection = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-
       <motion.div
         className="absolute inset-0 bg-black bg-opacity-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1.5 }}
       ></motion.div>
-
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white w-full">
         <motion.h1
@@ -75,10 +77,8 @@ const HeroSection = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          Safety in the wild only comes when you travel with those who
-          understand the wild.
+          Safety in the wild only comes when you travel with those who understand the wild.
         </motion.p>
-
 
         <motion.button
           onClick={handleBookingClick}
@@ -92,8 +92,6 @@ const HeroSection = () => {
           BOOK NOW
         </motion.button>
       </div>
-
-
     </motion.div>
   );
 };

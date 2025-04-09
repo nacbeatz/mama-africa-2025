@@ -19,10 +19,7 @@ import HistoricalSites from './Components/HistoricalSites';
 import GastronomicExperience from './Components/GastronomicExperience';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-
-
 function App() {
-
   const [selectedTour, setSelectedTour] = useState(null);
 
   const packagesData = [
@@ -64,10 +61,13 @@ function App() {
     },
   ];
 
-
   const handleTourSelect = (tourName) => {
     setSelectedTour(tourName);
     console.log(`Tour selected: ${tourName}`);
+  };
+
+  const clearSelectedTour = () => {
+    setSelectedTour(null);
   };
 
   return (
@@ -98,7 +98,10 @@ function App() {
           <Route path="/packages/guided-birding-tours" element={<GiudedBirding />} />
           <Route path="/packages/historical-sites-tour" element={<HistoricalSites />} />
           <Route path="/packages/gastronomic-experience" element={<GastronomicExperience />} />
-          <Route path="/booking" element={<Booking selectedTour={selectedTour} />} />
+          <Route
+            path="/booking"
+            element={<Booking selectedTour={selectedTour} onBookingComplete={clearSelectedTour} />}
+          />
           <Route path="/contact-us" element={<Contacts />} />
         </Routes>
         <Footer />
