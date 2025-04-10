@@ -14,13 +14,7 @@ function Contacts() {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full max-w-7xl space-y-8 md:space-y-0 md:space-x-12">
 
     
-        <div className="w-full md:w-1/2 justify-center rounded-lg shadow-lg overflow-hidden">
-          <img
-            src={ContactImage}
-            alt="Contact"
-            className="w-full h-full object-cover rounded-lg transition-transform transform hover:scale-105"
-          />
-        </div>
+        
 
       
         <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-left">

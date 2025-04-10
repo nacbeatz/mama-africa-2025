@@ -56,7 +56,7 @@ const Footer = () => {
       hover:from-[#EDFF4F] hover:to-[#FFFF99] hover:font-normal font-bold 
       py-2 w-2/4 px-4 rounded-md transition duration-300 transform hover:scale-110 
       hover:shadow-lg shadow-[0_0_15px_#D6ED07]"
-                
+
               >
                 REGISTER
               </motion.button>
@@ -112,7 +112,7 @@ const Footer = () => {
           <h3 className="mb-1 text-lg font-semibold">Address</h3>
           <p className="text-sm">Kigali, Nyarugenge</p>
           <p className="text-sm">KN 254 St.</p>
-          <p className="text-sm">info@mamaafrica.com</p>
+          <p className="text-sm">info@mamafricatours.com</p>
         </div>
       </div>
 

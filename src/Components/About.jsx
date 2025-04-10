@@ -29,12 +29,12 @@ const About = () => {
         </p>
 
         <img
-          src="/img/rda01.avif"
+          src="/img/owner.png"
           alt="Beautiful landscape of Rwanda"
-          className="w-full h-96 object-cover rounded-sm mt-6 shadow-md"
+          className="w-auto h-200px object-cover rounded-sm mt-6 "
           loading="lazy"
-          width="1200"
-          height="600"
+          width="100"
+          height="1000"
         />
 
         <h1 className="text-xl mt-6">What Makes Us Unique:</h1>
